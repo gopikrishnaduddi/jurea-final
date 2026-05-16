@@ -320,13 +320,19 @@ nav ul {
 /* STATS */
 
 .stats-section {
-    margin-top: 100px;
+    margin-top: 60px;
     background: white;
-    border-radius: 40px;
+    border-radius: 32px;
 
     display: flex;
     justify-content: space-around;
-    padding: 60px 30px;
+    align-items: center;
+
+    padding: 30px 20px;
+
+    width: 78%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .stat-box {
@@ -335,15 +341,20 @@ nav ul {
 
 .stat-box h2 {
     color: #2d328f;
-    font-size: 72px;
+    font-size: 42px;
     font-weight: 700;
 }
 
 .stat-box p {
-    margin-top: 15px;
+    margin-top: 10px;
     color: #444;
-    font-size: 22px;
-    line-height: 1.7;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.stat-box {
+    text-align: center;
+    width: 180px;
 }
 
 /* ========================================= */
