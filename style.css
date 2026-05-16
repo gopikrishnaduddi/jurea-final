@@ -376,18 +376,32 @@ nav ul {
 
     font-size: clamp(42px, 3vw, 72px);
     font-weight: 700;
+
+    margin-bottom: 10px;
 }
 
 .stat-box p {
-    margin-top: 10px;
     color: #444;
-    font-size: 12px;
-    line-height: 1.6;
+    font-size: 11px;
+    line-height: 1.5;
 }
 
 .stat-box {
     text-align: center;
     width: 180px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-box img {
+    width: 28px;
+    height: 28px;
+
+    object-fit: contain;
+
+    margin-bottom: 14px;
 }
 
 /* ========================================= */
@@ -652,4 +666,420 @@ nav ul {
     to {
         transform: rotate(-360deg);
     }
+}
+
+/* ================= BUSINESS SECTION ================= */
+.business-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    gap: 2%;
+}
+
+.business-left {
+    width: 56%;
+}
+
+.business-left h2 {
+    font-size: 2.2rem;
+    line-height: 1.25;
+    font-weight: 700;
+    color: #000;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 3.2rem;
+
+    max-width: 620px;
+}
+
+.business-left h2 span {
+    color: #3437A5;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.business-left p {
+    font-size: 0.95rem;
+
+    line-height: 2.1;
+
+    color: #5D6475;
+
+    margin-bottom: 2.2rem;
+
+    max-width: 760px;
+
+    font-weight: 400;
+}
+
+.business-right {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+/* ================= CARDS ================= */
+
+.problem-cards {
+    margin-top: 4rem;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 1.2rem;
+
+    align-items: stretch;
+}
+
+.problem-card {
+    background: #ffffff;
+
+    border-radius: 22px;
+
+    padding: 2.2rem 2rem;
+
+    min-height: 270px;
+
+    width: 100%;
+
+    box-sizing: border-box;
+}
+
+.problem-card h3 {
+    font-size: 1.05rem;
+
+    line-height: 1.6;
+
+    font-weight: 500;
+
+    color: #3437A5;
+
+    margin-bottom: 1.2rem;
+}
+
+.problem-card .line {
+    width: 100%;
+
+    border-top: 2px dashed #D9D9D9;
+
+    margin: 1rem 0 1.5rem;
+}
+
+.problem-card p {
+    font-size: 0.92rem;
+
+    line-height: 1.9;
+
+    color: #5D6475;
+
+    font-weight: 400;
+}
+
+/* ================= BOTTOM ================= */
+
+.backend-text {
+    margin-top: 7rem;
+    text-align: center;
+}
+
+.backend-text h2 {
+    font-size: 3.2vw;
+    line-height: 1.4;
+
+    margin-bottom: 2rem;
+
+    color: #000;
+}
+
+.backend-text h2 span {
+    color: #3437A5;
+    font-style: italic;
+}
+
+.backend-text p {
+    width: 65%;
+
+    margin: auto;
+
+    font-size: 1.1vw;
+    line-height: 2;
+
+    color: #5D6475;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+
+    .business-top {
+        flex-direction: column;
+    }
+
+    .business-left,
+    .business-right {
+        width: 100%;
+    }
+
+    .business-left h2,
+    .backend-text h2 {
+        font-size: 42px;
+    }
+
+    .business-left p,
+    .backend-text p {
+        font-size: 18px;
+    }
+
+    .problem-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .problem-card h3 {
+        font-size: 22px;
+    }
+
+    .problem-card p {
+        font-size: 16px;
+    }
+
+    .backend-text p {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .problem-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .business-left h2,
+    .backend-text h2 {
+        font-size: 34px;
+    }
+}
+
+.backend-image {
+    width: 92%;
+    max-width: 620px;
+}
+
+.business-right {
+    width: 44%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    position: relative;
+
+    padding-top: 2rem;
+}
+
+.pink-star {
+    position: absolute;
+
+    width: 32px;
+
+    top: 3%;
+    right: 2%;
+}
+
+/* ================= SERVICES SECTION ================= */
+
+.services-section {
+    width: 82%;
+    margin: 6rem auto;
+}
+
+.service-card {
+    width: 105%;
+    margin: 0 auto 28px;
+    background: #fff;
+    border-radius: 28px;
+
+    padding: 38px 50px;
+
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.service-number {
+    font-size: 92px;
+    font-weight: 300;
+    color: transparent;
+    -webkit-text-stroke: 2px #3439A5;
+    line-height: 1;
+    min-width: 110px;
+}
+
+.service-content h3 {
+    font-size: 34px;
+    font-weight: 700;
+    color: #3439A5;
+    margin-bottom: 12px;
+}
+
+.service-content p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #5F667A;
+    margin-bottom: 18px;
+    max-width: 900px;
+}
+
+.service-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-tags span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #384766;
+}
+
+.bottom-service-cards {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 2rem;
+
+    margin-top: 2rem;
+}
+
+.small-service-card {
+    flex: 1;
+    background: #fff;
+    border-radius: 24px;
+
+    padding: 22px 28px;
+
+    min-height: 120px;
+
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+
+    position: relative;
+}
+
+.service-pill {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 0.55rem 1.2rem;
+
+    background: #3437A5;
+
+    color: white;
+
+    border-radius: 999px;
+
+    font-size: 0.9rem;
+
+    font-weight: 600;
+
+    margin-bottom: 1.5rem;
+}
+
+.small-service-card h4 {
+    font-size: 1.35rem;
+
+    line-height: 1.6;
+
+    color: #384860;
+
+    margin-bottom: 1rem;
+}
+
+.small-service-card p {
+    font-size: 1rem;
+
+    line-height: 1.9;
+
+    color: #5D6475;
+}
+
+.arrow-btn {
+    position: absolute;
+
+    right: 2rem;
+
+    bottom: 2rem;
+
+    width: 42px;
+
+    height: 42px;
+
+    border-radius: 50%;
+
+    background: #3437A5;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 1.3rem;
+}
+
+/* ===============================
+   ALTERNATIVE COST SECTION
+================================= */
+
+.alternative-cost-section {
+    width: 100%;
+
+    padding: 70px 20px 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.alternative-cost-section h2 {
+    font-size: 22px;
+
+    line-height: 1.15;
+
+    font-weight: 700;
+
+    color: #111;
+
+    margin-bottom: 24px;
+}
+
+.alternative-cost-section h2 span {
+    color: #3439A5;
+    font-style: italic;
+}
+
+.alternative-cost-section p {
+    max-width: 1050px;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    color: #5F667A;
 }
