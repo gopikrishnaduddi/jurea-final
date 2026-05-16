@@ -8,15 +8,22 @@ body {
     font-family: 'Poppins', sans-serif;
     background: #f4f5fb;
     overflow-x: hidden;
-    zoom: 0.92;
 }
 
 .main-container {
     min-height: 100vh;
+
     background-image: url('./assets/background.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
-    padding: 15px 80px;
+
+    width: 100%;
+
+    max-width: 1600px;
+    margin: 0 auto;
+
+    padding: 20px 60px;
 }
 
 .navbar {
@@ -80,20 +87,22 @@ nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10px;
-    gap: 40px;
+
+    margin-top: 1vw;
+    gap: 20px;
 }
 
 .left-side {
-    width: 44%;
+    width: 48%;
     position: relative;
-    margin-left: 110px;
+
+    margin-left: 60px;
 }
 
 .blur-ball {
     position: absolute;
-    left: -180px;
-    top: 40px;
+    left: -120px;
+    top: -10px;
     width: 170px;
 }
 
@@ -112,8 +121,10 @@ nav ul {
 }
 
 .left-side h1 {
-    margin-top: 14px;
-    font-size: 28px;
+    margin-top: 1vw;
+
+    font-size: clamp(28px, 2.5vw, 58px);
+
     line-height: 1.15;
     font-weight: 700;
 }
@@ -124,10 +135,14 @@ nav ul {
 }
 
 .description {
-    margin-top: 16px;
-    font-size: 12px;
+    margin-top: 1vw;
+
+    font-size: clamp(12px, 0.9vw, 18px);
+
     line-height: 1.8;
-    width: 78%;
+
+    width: 92%;
+
     color: #5e6270;
 }
 
@@ -135,13 +150,18 @@ nav ul {
 
 .cards {
     display: flex;
-    gap: 16px;
-    margin-top: 28px;
+
+    gap: 1vw;
+
+    margin-top: 2vw;
 }
 
 .card {
-    width: 110px;
-    height: 118px;
+    width: 7vw;
+    min-width: 110px;
+
+    height: 8vw;
+    min-height: 118px;
     border: 2px solid #3f4598;
     border-radius: 16px;
     background: white;
@@ -218,16 +238,19 @@ nav ul {
 /* RIGHT SIDE */
 
 .right-side {
-    width: 50%;
+    width: 45%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
+    margin-right: 50px;
 }
 
 .ecosystem {
     position: relative;
-    width: 420px;
-    height: 420px;
+    width: 430px;
+    height: 430px;
+    animation: rotateEcosystem 12s linear infinite;
 }
 
 .circle {
@@ -236,14 +259,14 @@ nav ul {
 }
 
 .outer {
-    width: 420px;
-    height: 420px;
+    width: 100%;
+    height: 100%;
     background: rgba(255, 214, 214, 0.35);
 }
 
 .middle {
-    width: 320px;
-    height: 320px;
+    width: 76%;
+    height: 76%;
     background: rgba(255, 201, 220, 0.4);
 
     top: 50px;
@@ -251,8 +274,8 @@ nav ul {
 }
 
 .inner {
-    width: 220px;
-    height: 220px;
+    width: 52%;
+    height: 52%;
     background: rgba(255, 189, 215, 0.4);
 
     top: 100px;
@@ -261,19 +284,21 @@ nav ul {
 
 .main-text {
     position: absolute;
-    top: 145px;
-    left: 95px;
-
-    font-size: 38px;
+    top: 35%;
+    left: 20%;
+    font-size: clamp(34px, 2.6vw, 56px);
     font-weight: 700;
     text-align: center;
     line-height: 1.2;
+    animation: counterRotate 12s linear infinite;
+    transform-origin: center center;
 }
 
 .small-circle {
     position: absolute;
-    width: 80px;
-    height: 80px;
+
+    width: 85px;
+    height: 85px;
     background: #c6c0ff;
     border-radius: 50%;
 
@@ -285,6 +310,8 @@ nav ul {
     padding: 20px;
     font-size: 12px;
     color: #333;
+    animation: counterRotate 12s linear infinite;
+    transform-origin: center center;
 }
 
 .top {
@@ -320,7 +347,7 @@ nav ul {
 /* STATS */
 
 .stats-section {
-    margin-top: 60px;
+    margin-top: 4vw;
     background: white;
     border-radius: 32px;
 
@@ -330,7 +357,7 @@ nav ul {
 
     padding: 30px 20px;
 
-    width: 78%;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -341,7 +368,8 @@ nav ul {
 
 .stat-box h2 {
     color: #2d328f;
-    font-size: 42px;
+
+    font-size: clamp(42px, 3vw, 72px);
     font-weight: 700;
 }
 
@@ -597,5 +625,25 @@ nav ul {
     .blur-ball {
         width: 100px;
         left: -50px;
+    }
+}
+
+@keyframes rotateEcosystem {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes counterRotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
     }
 }
