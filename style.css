@@ -1,0 +1,578 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f5fb;
+    overflow-x: hidden;
+    zoom: 0.92;
+}
+
+.main-container {
+    min-height: 100vh;
+    background-image: url('./assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 15px 80px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+.start-btn {
+    margin-right: 30px;
+}
+
+.logo img {
+    width: 130px;
+}
+
+nav ul {
+    display: flex;
+    gap: 22px;
+    list-style: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: #1e1e1e;
+}
+
+.start-btn {
+    background: #2d328f;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.start-btn span {
+    width: 34px;
+    height: 34px;
+    background: white;
+    color: black;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* HERO */
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    gap: 40px;
+}
+
+.left-side {
+    width: 44%;
+    position: relative;
+    margin-left: 110px;
+}
+
+.blur-ball {
+    position: absolute;
+    left: -180px;
+    top: 40px;
+    width: 170px;
+}
+
+.tag {
+    display: inline-block;
+    background: #e5ddff;
+    color: #4b45d1;
+
+    padding: 10px 22px;
+    border-radius: 10px;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    margin-bottom: 10px;
+}
+
+.left-side h1 {
+    margin-top: 18px;
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.left-side h1 span {
+    color: #31358f;
+    font-style: italic;
+}
+
+.description {
+    margin-top: 18px;
+    font-size: 14px;
+    line-height: 1.8;
+    width: 85%;
+}
+
+/* CARDS */
+
+.cards {
+    display: flex;
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.card {
+    width: 125px;
+    height: 125px;
+    border: 2px solid #3f4598;
+    border-radius: 16px;
+    background: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 20px;
+}
+
+.cross {
+    color: red;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.check {
+    color: green;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.card p {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* WHATSAPP BUTTON */
+
+.whatsapp-btn {
+    margin-top: 40px;
+    background: #2d328f;
+    color: white;
+    border: none;
+    padding: 16px 30px;
+    border-radius: 50px;
+    font-size: 22px;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    cursor: pointer;
+}
+
+.whatsapp-icon {
+    width: 42px;
+    height: 42px;
+    background: white;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsapp-icon img {
+    width: 24px;
+}
+
+.bottom-text {
+    margin-top: 30px;
+    color: #5e6270;
+    font-size: 18px;
+}
+
+/* RIGHT SIDE */
+
+.right-side {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.ecosystem {
+    position: relative;
+    width: 420px;
+    height: 420px;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.outer {
+    width: 420px;
+    height: 420px;
+    background: rgba(255, 214, 214, 0.35);
+}
+
+.middle {
+    width: 320px;
+    height: 320px;
+    background: rgba(255, 201, 220, 0.4);
+
+    top: 50px;
+    left: 50px;
+}
+
+.inner {
+    width: 220px;
+    height: 220px;
+    background: rgba(255, 189, 215, 0.4);
+
+    top: 100px;
+    left: 100px;
+}
+
+.main-text {
+    position: absolute;
+    top: 145px;
+    left: 95px;
+
+    font-size: 38px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.small-circle {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: #c6c0ff;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: #333;
+}
+
+.top {
+    top: -25px;
+    left: 165px;
+}
+
+.left {
+    top: 85px;
+    left: -35px;
+}
+
+.right {
+    top: 85px;
+    right: -35px;
+}
+
+.bottom {
+    bottom: -25px;
+    left: 165px;
+}
+
+.left-bottom {
+    bottom: 85px;
+    left: -35px;
+}
+
+.right-bottom {
+    bottom: 85px;
+    right: -35px;
+}
+
+/* STATS */
+
+.stats-section {
+    margin-top: 100px;
+    background: white;
+    border-radius: 40px;
+
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 30px;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-box h2 {
+    color: #2d328f;
+    font-size: 72px;
+    font-weight: 700;
+}
+
+.stat-box p {
+    margin-top: 15px;
+    color: #444;
+    font-size: 22px;
+    line-height: 1.7;
+}
+
+/* ========================================= */
+/* =============== TABLET ================== */
+/* ========================================= */
+
+@media (max-width: 1200px) {
+
+    body {
+        zoom: 1;
+    }
+
+    .main-container {
+        padding: 20px 40px;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 70px;
+    }
+
+    .left-side {
+        width: 100%;
+    }
+
+    .right-side {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .left-side h1 {
+        font-size: 42px;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+    }
+
+    .stats-section {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    nav ul {
+        gap: 16px;
+    }
+}
+
+/* ========================================= */
+/* =============== MOBILE ================== */
+/* ========================================= */
+
+@media (max-width: 768px) {
+
+    body {
+        zoom: 1;
+    }
+
+    .main-container {
+        padding: 20px;
+    }
+
+    /* NAVBAR */
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logo {
+        margin-left: 0;
+    }
+
+    .start-btn {
+        margin-right: 0;
+        font-size: 13px;
+        padding: 8px 18px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+        font-size: 12px;
+    }
+
+    /* HERO */
+
+    .hero-section {
+        flex-direction: column;
+        gap: 60px;
+        margin-top: 20px;
+    }
+
+    .left-side {
+        width: 100%;
+    }
+
+    .tag {
+        font-size: 11px;
+    }
+
+    .left-side h1 {
+        font-size: 32px;
+        line-height: 1.3;
+    }
+
+    .description {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    /* CARDS */
+
+    .cards {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .card {
+        width: 140px;
+        height: 140px;
+    }
+
+    /* WHATSAPP BUTTON */
+
+    .whatsapp-btn {
+        font-size: 13px;
+        padding: 10px 18px;
+    }
+
+    .bottom-text {
+        font-size: 12px;
+        line-height: 1.8;
+    }
+
+    /* ECOSYSTEM */
+
+    .right-side {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .ecosystem {
+        width: 320px;
+        height: 320px;
+    }
+
+    .outer {
+        width: 320px;
+        height: 320px;
+    }
+
+    .middle {
+        width: 240px;
+        height: 240px;
+        top: 40px;
+        left: 40px;
+    }
+
+    .inner {
+        width: 160px;
+        height: 160px;
+        top: 80px;
+        left: 80px;
+    }
+
+    .main-text {
+        top: 110px;
+        left: 70px;
+        font-size: 28px;
+    }
+
+    .small-circle {
+        width: 65px;
+        height: 65px;
+        font-size: 10px;
+        padding: 6px;
+    }
+
+    .top {
+        top: -18px;
+        left: 125px;
+    }
+
+    .left {
+        top: 65px;
+        left: -18px;
+    }
+
+    .right {
+        top: 65px;
+        right: -18px;
+    }
+
+    .bottom {
+        bottom: -18px;
+        left: 125px;
+    }
+
+    .left-bottom {
+        bottom: 65px;
+        left: -18px;
+    }
+
+    .right-bottom {
+        bottom: 65px;
+        right: -18px;
+    }
+
+    /* STATS */
+
+    .stats-section {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 20px;
+    }
+
+    .stat-box h2 {
+        font-size: 42px;
+    }
+
+    .stat-box p {
+        font-size: 14px;
+    }
+
+    .blur-ball {
+        width: 100px;
+        left: -50px;
+    }
+}
