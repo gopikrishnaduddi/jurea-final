@@ -8,21 +8,19 @@ body {
     font-family: 'Poppins', sans-serif;
     background: #f4f5fb;
     overflow-x: hidden;
+    min-height: 100vh;
 }
 
 .main-container {
     min-height: 100vh;
-
     background-image: url('./assets/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-
+    background-position: center top;
+    background-attachment: fixed;
     width: 100%;
-
-    max-width: 1600px;
+    max-width: 100%;
     margin: 0 auto;
-
     padding: 20px 60px;
 }
 
@@ -240,16 +238,15 @@ nav ul {
 .right-side {
     width: 45%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-
-    margin-right: 50px;
+    margin-right: 0;
 }
 
 .ecosystem {
     position: relative;
-    width: 430px;
-    height: 430px;
+    width: min(430px, 38vw);
+    height: min(430px, 38vw);
     animation: rotateEcosystem 12s linear infinite;
 }
 
@@ -268,30 +265,39 @@ nav ul {
     width: 76%;
     height: 76%;
     background: rgba(255, 201, 220, 0.4);
-
-    top: 50px;
-    left: 50px;
+    top: 12%;
+    left: 12%;
 }
 
 .inner {
     width: 52%;
     height: 52%;
     background: rgba(255, 189, 215, 0.4);
-
-    top: 100px;
-    left: 100px;
+    top: 24%;
+    left: 24%;
 }
 
 .main-text {
     position: absolute;
-    top: 35%;
-    left: 20%;
-    font-size: clamp(34px, 2.6vw, 56px);
+    top: 50%;
+    left: 50%;
+    font-size: clamp(22px, 2vw, 42px);
     font-weight: 700;
     text-align: center;
     line-height: 1.2;
-    animation: counterRotate 12s linear infinite;
-    transform-origin: center center;
+    white-space: nowrap;
+    transform: translate(-50%, -50%);
+    animation: cancelRotation 12s linear infinite;
+}
+
+@keyframes cancelRotation {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(-360deg);
+    }
 }
 
 .small-circle {
@@ -311,7 +317,6 @@ nav ul {
     font-size: 12px;
     color: #333;
     animation: counterRotate 12s linear infinite;
-    transform-origin: center center;
 }
 
 .top {
@@ -564,9 +569,10 @@ nav ul {
     }
 
     .main-text {
-        top: 110px;
-        left: 70px;
-        font-size: 28px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 24px;
     }
 
     .small-circle {
