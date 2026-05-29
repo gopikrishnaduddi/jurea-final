@@ -142,7 +142,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
                 <img src="./assets/home_02_icon_04.png.png" alt="">
 
-                <h2>03</h2>
+                <h2 id="count1">00</h2>
 
                 <p>
                     Qualified professionals
@@ -156,7 +156,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
                 <img src="./assets/home_02_icon_05.png.png" alt="">
 
-                <h2>01</h2>
+                <h2 id="count2">00</h2>
 
                 <p>
                     Dedicated account
@@ -170,7 +170,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
                 <img src="./assets/home_02_icon_11.png.png" alt="">
 
-                <h2>48 hr</h2>
+                <h2 id="count3">00 hr</h2>
 
                 <p>
                     Onboarding
@@ -184,7 +184,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
                 <img src="./assets/home_02_icon_09.png.png" alt="">
 
-                <h2>00</h2>
+                <h2 id="count4">00</h2>
 
                 <p>
                     Missed deadlines
@@ -926,5 +926,58 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 </footer>
 
 </body>
+<script>
+let statsStarted = false;
 
+function randomCounter(id, finalValue, suffix = "") {
+
+    const element = document.getElementById(id);
+
+    let duration = 2000; // 2 seconds
+    let interval = 50;
+
+    let elapsed = 0;
+
+    const randomRun = setInterval(() => {
+
+        const randomNum = Math.floor(Math.random() * 99);
+
+        element.textContent =
+            String(randomNum).padStart(2, "0") + suffix;
+
+        elapsed += interval;
+
+        if (elapsed >= duration) {
+
+            clearInterval(randomRun);
+
+            element.textContent =
+                String(finalValue).padStart(2, "0") + suffix;
+        }
+
+    }, interval);
+}
+
+const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting && !statsStarted) {
+
+            statsStarted = true;
+
+            randomCounter("count1", 3);
+            randomCounter("count2", 1);
+            randomCounter("count3", 48, " hr");
+            randomCounter("count4", 0);
+        }
+
+    });
+
+}, {
+    threshold: 0.5
+});
+
+observer.observe(document.querySelector(".stats-section"));
+</script>
 </html>
