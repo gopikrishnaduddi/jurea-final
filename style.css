@@ -1083,3 +1083,746 @@ nav ul {
 
     color: #5F667A;
 }
+/* =========================================
+   COST COMPARISON SECTION
+========================================= */
+
+.cost-comparison-section {
+
+    width: 120%;
+
+    margin-top: 3%;
+    margin-left: -11%;
+
+    padding: 4%;
+
+    border-radius: 3%;
+
+    background: linear-gradient(
+        90deg,
+        #ebe5f7 0%,
+        #edf5f4 100%
+    );
+}
+
+.cost-comparison-section h2 {
+
+    text-align: center;
+
+    font-size: 2.2vw;
+
+    color: #2d328f;
+
+    margin-bottom: 4%;
+}
+
+.top-cost-row {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 1.5%;
+
+    margin-bottom: 3%;
+}
+
+.cost-card {
+
+    width: 28%;
+
+    background: white;
+
+    border-radius: 1.5%;
+
+    padding: 2%;
+
+    box-shadow: 0 0.4% 1.2% rgba(0,0,0,0.08);
+}
+
+.cost-card h4 {
+
+    font-size: 1.3vw;
+
+    color: #2d328f;
+
+    margin-bottom: 3%;
+}
+
+.cost-card span {
+
+    display: block;
+
+    color: #888;
+
+    font-size: 0.9vw;
+
+    margin-bottom: 2%;
+}
+
+.cost-card h3 {
+
+    font-size: 2.2vw;
+
+    margin-bottom: 3%;
+}
+
+.cost-card p {
+
+    color: #5f667a;
+
+    font-size: 1vw;
+
+    margin-bottom: 7%;
+}
+
+.cost-card button {
+
+    width: 100%;
+
+    border: none;
+
+    background: #2d328f;
+
+    color: white;
+
+    padding: 4%;
+
+    border-radius: 0.8vw;
+
+    font-size: 1vw;
+
+    cursor: pointer;
+}
+
+.plus-sign {
+
+    font-size: 3vw;
+
+    font-weight: 700;
+}
+
+.bottom-cost-row {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 2%;
+
+    margin-top: 2%;
+}
+
+.big-cost-card {
+
+    width: 42%;
+
+    background: white;
+
+    border-radius: 1.5%;
+
+    padding: 2%;
+
+    box-shadow: 0 0.4% 1.2% rgba(0,0,0,0.08);
+}
+
+.big-cost-card h4 {
+
+    font-size: 1.4vw;
+
+    color: #2d328f;
+
+    margin-bottom: 2%;
+}
+
+.big-cost-card span {
+
+    display: block;
+
+    color: #888;
+
+    font-size: 0.9vw;
+
+    margin-bottom: 2%;
+}
+
+.big-cost-card h3 {
+
+    font-size: 2.4vw;
+
+    margin-bottom: 2%;
+}
+
+.big-cost-card p {
+
+    font-size: 1vw;
+
+    color: #5f667a;
+
+    margin-bottom: 5%;
+}
+
+.big-cost-card button {
+
+    width: 100%;
+
+    border: none;
+
+    background: #2d328f;
+
+    color: white;
+
+    padding: 3.5%;
+
+    border-radius: 0.8vw;
+
+    font-size: 1vw;
+
+    cursor: pointer;
+}
+
+.vs-text {
+
+    font-size: 3vw;
+
+    font-weight: 700;
+}
+
+.cost-footer {
+
+    text-align: center;
+
+    margin-top: 3%;
+
+    font-size: 1vw;
+
+    color: #5f667a;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media(max-width:992px){
+
+    .top-cost-row{
+
+        flex-wrap: wrap;
+    }
+
+    .cost-card{
+
+        width: 45%;
+    }
+
+    .plus-sign{
+        display:none;
+    }
+
+    .bottom-cost-row{
+
+        flex-direction: column;
+    }
+
+    .big-cost-card{
+
+        width: 100%;
+    }
+
+    .vs-text{
+
+        margin: 3% 0;
+    }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:768px){
+
+    .cost-comparison-section h2{
+
+        font-size: 6vw;
+    }
+
+    .cost-card{
+
+        width: 100%;
+    }
+
+    .cost-card h4,
+    .big-cost-card h4{
+
+        font-size: 5vw;
+    }
+
+    .cost-card span,
+    .big-cost-card span{
+
+        font-size: 3.5vw;
+    }
+
+    .cost-card h3,
+    .big-cost-card h3{
+
+        font-size: 7vw;
+    }
+
+    .cost-card p,
+    .big-cost-card p{
+
+        font-size: 3.8vw;
+    }
+
+    .cost-card button,
+    .big-cost-card button{
+
+        font-size: 4vw;
+    }
+
+    .cost-footer{
+
+        font-size: 3.5vw;
+    }
+
+    .vs-text{
+
+        font-size: 10vw;
+    }
+}
+/* =====================================
+   JOURNEY SECTION
+===================================== */
+
+.journey-section{
+
+    width:120%;
+
+    margin-top:6%;
+    margin-left:-11%;
+
+    padding:6% 4%;
+
+    background:linear-gradient(
+        90deg,
+        #f1ebf8 0%,
+        #edf6f3 100%
+    );
+
+    border-radius:3%;
+}
+
+.journey-section h2{
+
+    text-align:center;
+
+    font-size:3vw;
+
+    font-weight:700;
+
+    margin-bottom:5%;
+}
+
+.journey-section h2 span{
+
+    color:#2d328f;
+
+    font-style:italic;
+}
+
+.journey-cards{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:1.2%;
+}
+
+.journey-card{
+
+    position:relative;
+
+    width:10%;
+
+    height:38vw;
+
+    overflow:hidden;
+
+    border-radius:1vw;
+
+    cursor:pointer;
+
+    transition:all .4s ease;
+}
+
+.active-card{
+
+    width:28%;
+}
+
+.journey-card img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+}
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,.65),
+        rgba(0,0,0,.15)
+    );
+}
+
+.card-content{
+
+    position:absolute;
+
+    left:6%;
+
+    right:6%;
+
+    bottom:6%;
+
+    color:white;
+}
+
+.card-content h3{
+
+    font-size:2vw;
+
+    margin-bottom:4%;
+}
+
+.card-content p{
+
+    font-size:1vw;
+
+    line-height:1.8;
+}
+
+.vertical-text{
+
+    position:absolute;
+
+    left:50%;
+
+    top:50%;
+
+    transform:
+        translate(-50%,-50%)
+        rotate(-90deg);
+
+    color:white;
+
+    white-space:nowrap;
+
+    font-size:1.6vw;
+
+    font-weight:500;
+
+    text-align:center;
+}
+
+/* HOVER EFFECT */
+
+.journey-card:hover{
+
+    width:28%;
+}
+
+.journey-card:hover .vertical-text{
+
+    display:none;
+}
+
+.journey-card:hover .card-content{
+
+    display:block;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .journey-section h2{
+
+        font-size:8vw;
+    }
+
+    .journey-cards{
+
+        flex-direction:column;
+    }
+
+    .journey-card,
+    .active-card{
+
+        width:100%;
+
+        height:70vw;
+    }
+
+    .vertical-text{
+
+        transform:none;
+
+        left:8%;
+
+        bottom:8%;
+
+        top:auto;
+
+        font-size:5vw;
+    }
+
+    .card-content h3{
+
+        font-size:6vw;
+    }
+
+    .card-content p{
+
+        font-size:4vw;
+    }
+}
+/* ===================================
+   TEAM SECTION
+=================================== */
+
+.team-section {
+    width: 140%;
+    background: #2d328f;
+
+    padding-top: 6%;
+    padding-bottom: 6%;
+    margin-left: -17%;
+
+    position: relative;
+}
+
+.team-header {
+
+    width: 70%;
+
+    margin: auto;
+
+    text-align: center;
+
+    color: white;
+}
+
+.team-header h2 {
+
+    font-size: 3.5vw;
+
+    font-weight: 700;
+
+    margin-bottom: 2%;
+}
+
+.team-header p {
+
+    font-size: 1vw;
+
+    line-height: 2;
+}
+
+.team-wrapper {
+
+    width: 78%;
+
+    margin: 1% auto 0;
+
+    position: relative;
+
+    border-radius: 2vw;
+
+    overflow: visible;
+
+    transform: translateY(92%);
+}
+
+.team-bg {
+
+    width: 100%;
+
+    display: block;
+}
+
+.team-card {
+
+    position: absolute;
+
+    background: rgba(45, 50, 143, 0.75);
+
+    backdrop-filter: blur(6px);
+
+    color: white;
+
+    padding: 2%;
+
+    border-radius: 1vw;
+}
+
+.profile-head {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 4%;
+}
+
+.profile-head img {
+
+    width: 18%;
+
+    border-radius: 0.8vw;
+}
+
+.profile-head h3 {
+
+    font-size: 2vw;
+}
+
+.team-card h4 {
+
+    font-size: 1.8vw;
+
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.team-card p {
+
+    font-size: 1.1vw;
+
+    line-height: 1.9;
+}
+
+/* LEFT */
+
+.advocate {
+
+    width: 34%;
+
+    top: 4%;
+
+    left: 3%;
+}
+
+/* RIGHT */
+
+.cs {
+
+    width: 30%;
+
+    top: 4%;
+
+    right: 3%;
+}
+
+/* CENTER BOTTOM */
+
+.ca {
+
+    width: 34%;
+
+    bottom: 4%;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+/* =====================
+   MOBILE
+===================== */
+
+@media(max-width:768px){
+
+    .team-header{
+
+        width:90%;
+    }
+
+    .team-header h2{
+
+        font-size:8vw;
+    }
+
+    .team-header p{
+
+        font-size:4vw;
+    }
+
+    .team-wrapper{
+
+        width:95%;
+
+        display:flex;
+
+        flex-direction:column;
+
+        gap:20px;
+
+        overflow:visible;
+    }
+
+    .team-bg{
+
+        display:none;
+    }
+
+    .team-card{
+
+        position:relative;
+
+        width:100%;
+
+        top:auto;
+        left:auto;
+        right:auto;
+        bottom:auto;
+
+        transform:none;
+    }
+
+    .profile-head img{
+
+        width:20%;
+    }
+
+    .profile-head h3{
+
+        font-size:6vw;
+    }
+
+    .team-card h4{
+
+        font-size:5vw;
+    }
+
+    .team-card p{
+
+        font-size:3.8vw;
+    }
+}
+
