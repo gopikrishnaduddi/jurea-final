@@ -246,7 +246,7 @@ nav ul {
     position: relative;
     width: min(430px, 38vw);
     height: min(430px, 38vw);
-    animation: rotateEcosystem 12s linear infinite;
+    animation: rotateEcosystem 25s linear infinite;
 }
 
 .circle {
@@ -286,7 +286,7 @@ nav ul {
     line-height: 1.2;
     white-space: nowrap;
     transform: translate(-50%, -50%);
-    animation: cancelRotation 12s linear infinite;
+    animation: cancelRotation 25s linear infinite;
 }
 
 @keyframes cancelRotation {
@@ -315,7 +315,7 @@ nav ul {
     padding: 20px;
     font-size: 12px;
     color: #333;
-    animation: counterRotate 12s linear infinite;
+    animation: counterRotate 25s linear infinite;
 }
 
 .top {
