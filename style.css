@@ -905,7 +905,6 @@ nav ul {
 .service-card {
     width: 105%;
     margin: 0 auto 28px;
-    background: #fff;
     border-radius: 28px;
 
     padding: 38px 50px;
@@ -965,7 +964,6 @@ nav ul {
 
 .small-service-card {
     flex: 1;
-    background: #fff;
     border-radius: 24px;
 
     padding: 22px 28px;
@@ -1609,7 +1607,6 @@ nav ul {
     background: #2d328f;
 
     padding-top: 6%;
-    padding-bottom: 46%;
     margin-left: -17%;
 
     position: relative;
@@ -1646,7 +1643,7 @@ nav ul {
 
     width: 78%;
 
-    margin: 1% auto 0;
+    margin: 0 auto 0;
 
     position: relative;
 
@@ -1654,7 +1651,7 @@ nav ul {
 
     overflow: visible;
 
-    transform: translateY(92%);
+    transform: translateY(20%);
 }
 
 .team-bg {
@@ -1721,9 +1718,9 @@ nav ul {
 
     width: 34%;
 
-    top: 4%;
+    top: 0%;
 
-    left: 3%;
+    left: 0%;
 }
 
 /* RIGHT */
@@ -1732,22 +1729,22 @@ nav ul {
 
     width: 30%;
 
-    top: 4%;
+    top: 0%;
 
-    right: 3%;
+    right: 0%;
 }
 
 /* CENTER BOTTOM */
 
 .ca {
 
-    width: 34%;
+    width: 37%;
 
-    bottom: 4%;
+    bottom: 0%;
 
     left: 50%;
 
-    transform: translateX(-50%);
+    transform: translateX(-45%);
 }
 
 /* =====================
@@ -1832,7 +1829,7 @@ nav ul {
     width: 120%;
     margin-left: -11%;
 
-    padding: 8% 0;
+    padding: 18% 0;
 
   
 }
