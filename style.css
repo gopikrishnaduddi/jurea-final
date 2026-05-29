@@ -172,16 +172,22 @@ nav ul {
     padding: 20px;
 }
 
-.cross {
-    color: red;
-    font-size: 14px;
-    margin-bottom: 0;
+.cross,
+.check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
-.check {
-    color: green;
-    font-size: 14px;
-    margin-bottom: 0;
+.cross img,
+.check img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+.last-check img {
+    margin-bottom: -10px;
 }
 
 .card p {
@@ -926,7 +932,7 @@ nav ul {
 }
 
 .service-content h3 {
-    font-size: 34px;
+    font-size: 30px;
     font-weight: 700;
     color: #3439A5;
     margin-bottom: 12px;
@@ -1674,6 +1680,7 @@ nav ul {
     padding: 2%;
 
     border-radius: 1vw;
+    height: 266px;
 }
 
 .profile-head {
@@ -1707,7 +1714,7 @@ nav ul {
 
 .team-card p {
 
-    font-size: 1.1vw;
+    font-size: 14px;
 
     line-height: 1.9;
 }
