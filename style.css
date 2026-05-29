@@ -1667,20 +1667,15 @@ nav ul {
     display: block;
 }
 
-.team-card {
-
+.team-card{
     position: absolute;
-
     background: rgba(45, 50, 143, 0.75);
-
     backdrop-filter: blur(6px);
-
     color: white;
-
     padding: 2%;
-
     border-radius: 1vw;
-    height: 266px;
+
+    min-height: 266px; /* instead of height */
 }
 
 .profile-head {
